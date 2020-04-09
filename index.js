@@ -13,7 +13,6 @@ function loadDoc() {
 }
 
 function successLoad(result) {
-	console.log(result)
 	// show pjrs
 	for(pair of result.pjrs) {
 		$('#second-section-img').append(
@@ -52,7 +51,6 @@ function successLoad(result) {
 	// first show money summary
 	for(donasi of result.donasi) {
 		if(donasi.kategori.toLowerCase() == 'summary') {
-			console.log('found');
 			table.append(
 				'<tr class="cup-table-row">'
 				+	'<td class="cups-rs">' + donasi.item + '</td>'
