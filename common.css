@@ -32,7 +32,7 @@
 	background-color: #76bbc2;
 	color: white;
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	height: 3.5em;
 	top: 0;
 }
@@ -64,9 +64,9 @@
 	font-family: 'WorkSans';
 	font-size: 10pt;
 	display: flex;
-	border-color: red;
 	border-style: solid;
-	min-height: 600px;
+	border: none;
+	min-height: 500px;
 	padding: 2em 0;
 }
 
@@ -84,7 +84,7 @@
 
 .section-text {
 
-	padding: 18% 0;
+	padding: 10% 0;
 }
 .section-title {
 	font-family: 'Coco-Gothic';
@@ -105,6 +105,8 @@
 	color: white;
 	display: block;
 	margin-top: 3em;
+	background-image: url('header.png');
+	background-size: cover;
 }
 
 #first-section-text {
@@ -193,4 +195,52 @@
 /* THIRD SECTION */
 #third-section-text {
 	padding-left: 120px;
+}
+
+#third-section-img {
+	display: flex;
+	align-items: center;
+}
+
+.cup-table-row td {
+	background-color: #a6e8dc;
+	padding: 5px 50px;
+	font-size: 9pt;
+}
+
+.cups-rs {
+	border-radius: 15px 0 0 15px;
+}
+
+.cups-cups {
+	border-radius: 0 15px 15px 0;
+	text-align: center;
+}
+
+.cup-table-highlighted-row {
+	background-color: #ffbf51;
+	text-align: center;
+}
+
+.cup-table-highlighted-row th {
+	padding: 5px 50px;
+	border-radius: 20px;
+	border-color: white;
+	border-style: solid;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	font-family: 'Coco-Gothic';
+	font-size: 13pt;
+}
+
+#total-donasi {
+	font-family: 'WorkSans';
+}
+
+/* FOURTH SECTION */
+#fourth-section-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

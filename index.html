@@ -13,11 +13,13 @@
     <script src="index.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
 
     <!-- Styles -->
     <link href="common.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -60,7 +62,7 @@
 
     <!-- FIRST DIV -->
     <div id="first-section" class="section">
-        <div id="first-section-text">
+        <div id="first-section-text" class="wow fadeIn">
             <div id="first-section-title">
                 #SamaSamaKitaBisa
             </div>
@@ -74,7 +76,7 @@
 
     <!-- SECOND DIV -->
     <div id="second-section" class="section odd-section">
-        <div id="second-section-text" class="section-subdiv section-text">
+        <div id="second-section-text" class="section-subdiv section-text wow fadeInRight">
             <div id="second-section-title" class="section-title">
                 Daftar Rumah Sakit
             </div>
@@ -83,13 +85,13 @@
             </div>
         </div>
 
-        <div id="second-section-img" class="section-subdiv section-img">
+        <div id="second-section-img" class="section-subdiv section-img wow fadeInLeft">
         </div>
     </div>
 
     <!-- THIRD DIV -->
     <div id="third-section" class="section even-section">
-        <div id="third-section-text" class="section-subdiv section-text">
+        <div id="third-section-text" class="section-subdiv section-text wow slideInUp">
             <div id="third-section-title" class="section-title">
                 Total Cup yang Didistribusikan
             </div>
@@ -98,24 +100,47 @@
             </div>
         </div>
 
-        <div id="third-section-img" class="section-subdiv section-img">
-            test
+        <div id="third-section-img" class="section-subdiv section-img wow slideInUp">
+            <table id="cup-table">
+                <thead>
+                    <tr class="cup-table-highlighted-row">
+                        <th>Rumah Sakit</th>
+                        <th>Jumlah Cup</th>
+                    </tr>
+                </thead>
+                <tbody id="cup-table-body">
+
+                </tbody>
+            </table>
         </div>
     </div>
 
     <!-- FOURTH DIV -->
     <div id="fourth-section" class="section odd-section">
-        <div id="third-section-text" class="section-subdiv section-text">
-            <div id="third-section-title" class="section-title">
+        <div id="fourth-section-text" class="section-subdiv section-text">
+            <div id="fourth-section-title" class="section-title">
                 Update Donasi
             </div>
-            <div id="third-section-desc" class="section-desc">
+            <div id="fourth-section-desc" class="section-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nisi diam, commodo pharetra augue ac, fringilla vestibulum justo. Sed id elit eu sem eleifend malesuada in eu nulla. Duis eget tortor finibus, blandit dui a, suscipit mauris.
             </div>
         </div>
 
-        <div id="third-section-img" class="section-subdiv section-img">
-            test
+        <div id="fourth-section-img" class="section-subdiv section-img">
+            <table id="donasi-table">
+                <thead>
+                    <tr class="cup-table-highlighted-row">
+                        <th colspan="2">Summary</th>
+                    </tr>
+                    <tr class="cup-table-highlighted-row">
+                        <th>Item</th>
+                        <th>Jumlah</th>
+                    </tr>
+                </thead>
+                <tbody id="donasi-table-body">
+                    
+                </tbody>
+            </table>
         </div>
     </div>
     <!-- FIFTH DIV -->
