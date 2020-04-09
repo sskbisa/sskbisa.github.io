@@ -10,23 +10,27 @@
     <title>#SamaSamaKitaBisa</title>
 
     <!-- scripts -->
-    <script src="index.js" defer></script>
+    <script src="about.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/595d140dbd.js" crossorigin="anonymous"></script>
 
     <!-- Styles -->
-    <link href="common.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
+    <link href="about.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
 </head>
 
 <body>
+    <!-- TOP NAV BAR -->
     <nav id="navbar" class="navbar navbar-expand-md">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img id="navbar-logo" src="logosskb.png">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-caret-down"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,14 +41,152 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
-                   <li class="nav-item">
-                        <a class="nav-link" href="">Daftar</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#second-section">DONASI</a>
                     </li>
-                </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#third-section">LAPORAN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#fourth-section">DISTRIBUSI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#fifth-section">DAFTAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
             </div>
         </div>
     </nav>
 
-    
+    <!-- FIRST DIV -->
+    <div id="first-section" class="section even-section">
+        <div id="first-section-text" class="section-subdiv section-text wow fadeIn">
+            <div id="first-section-title" class="section-title">
+                ABOUT
+            </div>
+            <div id="first-section-desc" class="section-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nisi diam, commodo pharetra augue ac, fringilla vestibulum justo. Sed id elit eu sem eleifend malesuada in eu nulla. Duis eget tortor finibus, blandit dui a, suscipit mauris.
+            </div>
+        </div>
+
+        <div id="first-section-img" class="section-subdiv section-img wow fadeIn">
+            <img id="logo-gede" src="logosskb.png">
+        </div>
+    </div>
+
+    <!-- SECOND DIV -->
+    <div id="second-section" class="section odd-section">
+        <div id="second-section-text" class="section-subdiv section-text wow fadeIn">
+            <div id="second-section-title" class="section-title">
+                Siapa Saja Tenaga Kesehatan Itu?
+            </div>
+            <div id="second-section-desc" class="section-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nisi diam, commodo pharetra augue ac, fringilla vestibulum justo. Sed id elit eu sem eleifend malesuada in eu nulla. Duis eget tortor finibus, blandit dui a, suscipit mauris.
+            </div>
+        </div>
+
+        <div id="second-section-img" class="section-subdiv section-img wow fadeIn">
+            <img id="kesehatan" src="kesehatan.png">
+        </div>
+    </div>
+
+    <!-- THIRD DIV -->
+    <div id="third-section" class="section even-section">
+        <div id="third-section-text" class="section-subdiv section-text wow fadeIn">
+            <div id="third-section-title" class="section-title">
+                Bagaimana Cara Membantu?
+            </div>
+            <div id="third-section-desc" class="section-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nisi diam, commodo pharetra augue ac, fringilla vestibulum justo. Sed id elit eu sem eleifend malesuada in eu nulla. Duis eget tortor finibus, blandit dui a, suscipit mauris.
+            </div>
+        </div>
+
+        <div id="third-section-img" class="section-subdiv section-img wow fadeIn">
+            <img id="howto" src="howto.png">
+        </div>
+    </div>
+
+    <!-- FOURTH DIV -->
+    <div id="fourth-section" class="section odd-section">
+        <div id="fourth-section-text" class="section-subdiv section-text wow fadeIn">
+            <div id="fourth-section-title" class="section-title">
+                Mekanisme Bantuan
+            </div>
+            <div id="fourth-section-desc" class="section-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nisi diam, commodo pharetra augue ac, fringilla vestibulum justo. Sed id elit eu sem eleifend malesuada in eu nulla. Duis eget tortor finibus, blandit dui a, suscipit mauris.
+            </div>
+        </div>
+
+        <div id="fourth-section-img" class="section-subdiv section-img wow fadeIn">
+            <img id="mekanisme" src="mekanisme.png">
+        </div>
+    </div>
+    <!-- FIFTH DIV -->
+    <div id="fifth-section" class="section even-section">
+        <div id="fifth-section-text" class="section-subdiv section-text wow fadeIn">
+            <div id="fifth-section-title" class="section-title">
+                Sedikit Catatan
+            </div>
+            <div id="fifth-section-desc" class="section-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nisi diam, commodo pharetra augue ac, fringilla vestibulum justo. Sed id elit eu sem eleifend malesuada in eu nulla. Duis eget tortor finibus, blandit dui a, suscipit mauris.
+            </div>
+        </div>
+
+        <div id="fifth-section-img" class="section-subdiv section-img wow fadeIn">
+        </div>
+    </div>
+
+    <div id="before-footer">
+    </div>
+
+    <div id="footer">
+        <div id="footer-top">
+            <div id="footer-img" class="footer-div">
+                <img src="logosskb.png">
+            </div>
+            <div id="donate-wrapper" class="footer-div">
+                <a href="#fifth-section" id="footer-donate" class="donate-button">DONATE NOW</a>
+            </div>
+            <div id="footer-nav" class="footer-div">
+                <ul id="footer-nav-items">
+                    <li>
+                        <a class="nav-link" href="index.html#second-section">
+                            Daftar Rumah Sakit
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#third-section">
+                            Distribusi
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#fourth-section">
+                            Update Donasi
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#fifth-section">
+                            Laporan Keuangan
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="about.html">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer-cp" class="footer-div">
+                <p class="cp-text">Contact Person</p>
+                <p class="cp-text">Alvin Rifqy</p>
+                <p class="cp-text cp-number">+6281904252554</p>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            TIM MEDIA / 2020
+        </div>
+    </div>
 </body>
 </html>
