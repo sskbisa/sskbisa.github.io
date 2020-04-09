@@ -27,6 +27,20 @@
 		format('truetype');
 }
 
+body {
+
+}
+
+.donate-button:hover {
+	text-decoration: none;
+	color: #383838;
+}
+
+
+.navbar-toggler {
+	color: white !important;
+}
+
 /* NAVBAR */
 #navbar {
 	background-color: #76bbc2;
@@ -67,11 +81,15 @@
 	border-style: solid;
 	border: none;
 	min-height: 500px;
-	padding: 2em 0;
+	padding: 2em 30px 0 2em;
 }
 
 .odd-section {
 	flex-flow: row-reverse nowrap;
+}
+
+.odd-section .section-text {
+	padding-left: 30px;
 }
 
 .even-section {
@@ -84,7 +102,6 @@
 }
 
 .section-text {
-
 	padding: 10% 0;
 }
 .section-title {
@@ -351,4 +368,135 @@
 
 .cp-number {
 	font-family: 'WorkSans'
+}
+
+
+/** FOR MOBILE */
+@media only screen and (max-width: 767px) {
+	.odd-section {
+		flex-flow: column nowrap;
+	}
+	.odd-section .section-text {
+		padding-left: 0px;
+	}
+	.even-section {
+		flex-flow: column nowrap;
+		padding-left: 0;
+	}
+
+	.section {
+		width: 100%;
+		overflow: hidden;
+		min-height: 300px;
+		padding: 0;
+	}
+
+	.section-subdiv {
+		width: 100%;
+	}
+
+	.section-title {
+		font-size: 25pt;
+		padding: 0 30px;
+	}
+
+	.section-desc {
+		width: 100%;
+		padding: 0 30px;
+		font-size: 9pt;
+	}
+
+	#first-section {
+		padding-left: 10px;
+		background-image: url('mid-header.png');
+	}
+
+	#first-section-title {
+		word-wrap: break-word;
+		font-size: 18pt;
+	}
+
+	#first-section-text {
+		width: 100%;
+		padding: 3em 0 0 10px;
+	}
+
+	#first-section-desc {
+		font-size: 8pt;
+		width: 90%;
+	}
+
+	#second-section-text {
+		padding: 10px;
+	}
+
+	#third-section-img {
+		text-align: center;
+	}
+
+	.pjrs-pair {
+		flex-basis: 50px;
+		margin: 5px;
+	}
+
+	.pjrs-rs {
+		height: 34px;
+		padding: 5px;
+		font-size: 7pt;
+	}
+
+	.pjrs-cups {
+		height: 60px;
+		padding: 10px;
+	}
+
+	.cup-table-highlighted-row th {
+		padding: 5px 20px;
+		font-size: 10pt;
+	}
+
+	.cup-table-row td {
+		font-size: 8pt;
+		padding: 5px 20px;
+	}
+
+	.navbar-nav {
+		background-color: rgb(109, 174, 176);
+	    border-radius: 0 0 15px 15px;
+	    padding-bottom: 10px;
+	}
+
+	#third-section-img {
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+
+	#fifth-section-text {
+		width: 100%;
+	}
+
+	#fifth-section-img {
+		width: 100%;
+		padding: 10px;
+	}
+
+	#sixth-section {
+		padding-top: 10px;
+	}
+
+	#howto {
+		width: 100%;
+	}
+
+	#contributors {
+		width: 300px;
+		height:400px;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	#first-section {
+		background-image: url('mobile-header.png');
+	}
 }
