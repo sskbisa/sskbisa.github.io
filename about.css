@@ -351,6 +351,7 @@ body {
 
 	#first-section-img {
 		width: 100%;
+		padding-bottom: 3em;
 	}
 
 	#first-section-title {
@@ -360,7 +361,7 @@ body {
 
 	#first-section-text {
 		width: 100%;
-		padding: 3em 0 0 10px;
+		padding: 0 0 12em 0;
 	}
 
 	#first-section-desc {
