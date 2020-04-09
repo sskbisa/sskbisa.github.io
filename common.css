@@ -76,6 +76,7 @@
 
 .even-section {
 	flex-flow: row nowrap;
+	padding-left: 120px;
 }
 
 .section-subdiv {
@@ -194,7 +195,7 @@
 
 /* THIRD SECTION */
 #third-section-text {
-	padding-left: 120px;
+	
 }
 
 #third-section-img {
@@ -243,4 +244,41 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+/* FIFTH SECTION */
+#fifth-section-text {
+	width: 40%;
+}
+#fifth-section-img {
+	width: 80%;
+	padding-left: 40px;
+}
+#howto {
+	width: 80%;
+}
+
+/* SIXTH SECTION */
+#sixth-section {
+	padding-top: 200px;
+	display: block
+}
+#sixth-section-title {
+	width: 100%;
+	text-align: center;
+}
+
+#contributors {
+	width: 800px;
+	height: 500px;
+	background-color: grey;
+	margin: auto;
+}
+
+/** FOOTER */
+#before-footer {
+	width: 100vw;
+	height: 200px;
+	background-image: url('before-footer.png');
+	background-size: cover;
 }
