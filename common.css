@@ -27,12 +27,14 @@
 		format('truetype');
 }
 
-body {
-}
-
+/* NAVBAR */
 #navbar {
 	background-color: #76bbc2;
 	color: white;
+	position: fixed;
+	width: 100%;
+	height: 3.5em;
+	top: 0;
 }
 
 #navbar-logo {
@@ -56,19 +58,53 @@ body {
 	color: #ffbf51;
 }
 
+/* SECTIONS */
 .section {
 	background-color: white;
-	height: 100vh;
 	font-family: 'WorkSans';
 	font-size: 10pt;
+	display: flex;
+	border-color: red;
+	border-style: solid;
+	min-height: 600px;
+	padding: 2em 0;
 }
 
+.odd-section {
+	flex-flow: row-reverse nowrap;
+}
+
+.even-section {
+	flex-flow: row nowrap;
+}
+
+.section-subdiv {
+	width: 50%;
+}
+
+.section-text {
+
+	padding: 18% 0;
+}
+.section-title {
+	font-family: 'Coco-Gothic';
+	font-weight: bold;
+	font-size: 35pt;
+	color: #393939;
+}
+
+.section-desc {
+	width: 70%;
+}
+
+/* FIRST SECTION */
 #first-section {
 	background-color: #76bbc2;
 	height: 100vh;
-	padding: 12% 0 0 80px;
+	padding: 12% 0 0 120px;
 	color: white;
-
+	display: block;
+	margin-top: 3em;
 }
 
 #first-section-text {
@@ -111,4 +147,50 @@ body {
 
 #first-donate-button:hover {
 	box-shadow: none;
+}
+
+/* SECOND SECTION */
+#second-section-img {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.pjrs-pair {
+	flex: 0 0 120px;
+	margin: 10px;
+}
+.pjrs-rs {
+	background-color: #ffbf51;
+	padding: 10px;
+	text-align: center;
+	height: 50px;
+	margin-bottom: 5px;
+	vertical-align: middle;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'WorkSans';
+}
+
+.pjrs-shop {
+	background-color: #a6e8dc;
+	padding: 10px;
+	text-align: center;
+	height: 80px;
+	vertical-align: middle;
+	padding: 1.5em;
+	font-family: 'WorkSans';
+	color: #383838;
+}
+
+.pjrs-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+/* THIRD SECTION */
+#third-section-text {
+	padding-left: 120px;
 }
