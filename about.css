@@ -27,8 +27,8 @@
 		format('truetype');
 }
 
-body {
-
+html, body {
+	background-color: rgb(109, 174, 176);
 }
 
 .donate-button:hover {
@@ -81,7 +81,7 @@ body {
 	border-style: solid;
 	border: none;
 	min-height: 500px;
-	padding: 2em 30px 0 2em;
+	padding: 14em 30px 2em 2em;
 	color: white;
 	justify-content: center;
 }
@@ -323,7 +323,7 @@ body {
 		width: 100%;
 		overflow: hidden;
 		min-height: 300px;
-		padding: 0;
+		padding: 6em 0;
 		padding-top: 20px;
 		align-items: center;
 		justify-content: center;

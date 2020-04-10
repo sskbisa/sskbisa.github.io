@@ -155,9 +155,9 @@ body {
 	background-color: #ffbf51;
 	font-family: 'Coco-Gothic';
 	font-weight: bold;
-	font-size: 13pt;
-	color: #393939;
-	padding: 5px 30px;
+	color: white;
+	font-size: 10pt;
+	padding: 8px 10px;
 	border-radius: 10px;
 	border: none;
 	box-shadow: 0 3px 5px 1px rgb(110, 157, 163);
@@ -216,14 +216,17 @@ body {
 }
 
 #third-section-img {
-	display: flex;
-	align-items: center;
+	/*display: flex;
+	align-items: center;*/
+	padding: 20px;
+	overflow: scroll;
+	max-height: 500px;
 }
 
 .cup-table-row td {
 	background-color: #a6e8dc;
 	padding: 5px 50px;
-	font-size: 9pt;
+	font-size: 16px;
 }
 
 .cups-rs {
@@ -258,18 +261,28 @@ body {
 
 /* FOURTH SECTION */
 #fourth-section-img {
-	display: flex;
-	align-items: center;
 	justify-content: center;
+	overflow: scroll;
+	max-height: 500px;
+}
+#donasi-table {
+	margin: auto;
 }
 
 /* FIFTH SECTION */
 #fifth-section-text {
 	width: 40%;
 }
+#fifth-section-donate-wrapper {
+	padding:1em 3em;
+}
 #fifth-section-img {
 	width: 80%;
 	padding-left: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 #howto {
 	width: 80%;
@@ -376,9 +389,6 @@ body {
 	.even-section {
 		padding-left: 20px
 	}
-	#fifth-section-text {
-		width: 80%;
-	}
 }
 /** FOR MOBILE */
 @media only screen and (max-width: 767px) {
@@ -475,10 +485,20 @@ body {
 	    padding-bottom: 10px;
 	}
 
+/*
 	#third-section-img {
 		display: flex;
 	    align-items: center;
 	    justify-content: center;
+	    overflow: visible;
+	    max-height: none;
+	}*/
+	#third-section-img table {
+		margin: auto;
+	}
+
+	#fourth-section-img table {
+		margin: auto;
 	}
 
 	#fifth-section-text {

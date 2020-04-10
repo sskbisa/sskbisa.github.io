@@ -44,6 +44,7 @@ function successLoad(result) {
 		+	'<th id="total-donasi">' + totalCups.toString() + '</th>'
 		+ '</tr>'
 	);
+	
 
 	// show donasi
 	// count categories
@@ -59,6 +60,7 @@ function successLoad(result) {
 			);
 		}
 	}
+
 	// show the rest
 	var prevKategori = "";
 	for(donasi of result.donasi) {
