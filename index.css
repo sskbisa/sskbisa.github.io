@@ -223,6 +223,9 @@ body {
 	max-height: 500px;
 }
 
+#cup-table {
+	margin: auto;
+}
 .cup-table-row td {
 	background-color: #a6e8dc;
 	padding: 5px 50px;
