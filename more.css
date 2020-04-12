@@ -140,15 +140,6 @@ html, body {
 	padding: 100px;
 }
 
-#first-section-text {
-	width: 50%;
-}
-
-#first-section-img {
-	width: 50%;
-}
-
-
 #first-section-more a {
 	color: white;
 	font-style: italic;
@@ -179,28 +170,10 @@ html, body {
 	width: 80%;
 	padding-left: 40px;
 }
-#third-section-donate-wrapper {
-	padding: 1em 0em;
-}
-#howto {
-	width: 80%;
-}
-
-#kesehatan {
-	width: 70%;
-}
-
-#fourth-section-img {
-	width: 80%;
-}
-
-/* SIXTH SECTION */
-#sixth-section {
-	padding-top: 200px;
-	display: block
-}
 
 #cp-big {
+	min-width: 500px;
+	width: auto;
 	margin: auto;
 	padding: 30px;
 	background-color: #58CCD1;
@@ -211,12 +184,14 @@ html, body {
 #cp-big h1 {
 	font-family: 'Coco-Gothic';
 	font-weight: bold;
-	text-align: center;
+	text-align:center;
 }
 
 #cp-name {
-	margin: 0;
-	font-size: 12pt;
+	margin-bottom: 10px;
+	font-size: 9pt;
+	text-align: center;
+	max-width: 300px;
 }
 
 #cp-num {
@@ -234,7 +209,7 @@ html, body {
 }
 
 #footer {
-	background-color: #76bbc2;
+	background-color: rgb(109, 174, 176);
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
@@ -361,67 +336,9 @@ html, body {
 		font-size: 9pt;
 	}
 
-	#third-section-donate-wrapper {
-		padding-left:30px;
-	}
-
 	#first-section {
 		flex-flow: column-reverse nowrap;
-		padding: 0;
-	}
-
-	#first-section-img {
-		width: 100%;
-		padding-bottom: 3em;
-	}
-
-	#first-section-title {
-		word-wrap: break-word;
-		font-size: 18pt;
-	}
-
-	#first-section-text {
-		width: 100%;
-		padding: 0 0 12em 0;
-	}
-
-	#first-section-desc {
-		font-size: 10pt;
-		width: 90%;
-	}
-
-	#second-section-text {
-		padding: 10px;
-	}
-
-	#third-section-img {
-		text-align: center;
-	}
-
-	.pjrs-pair {
-		flex-basis: 50px;
-		margin: 5px;
-	}
-
-	.pjrs-rs {
-		height: 34px;
-		padding: 5px;
-		font-size: 7pt;
-	}
-
-	.pjrs-cups {
-		height: 60px;
-		padding: 10px;
-	}
-
-	.cup-table-highlighted-row th {
-		padding: 5px 20px;
-		font-size: 10pt;
-	}
-
-	.cup-table-row td {
-		font-size: 8pt;
-		padding: 5px 20px;
+		padding: 0 10px;
 	}
 
 	.navbar-nav {
@@ -446,7 +363,7 @@ html, body {
 	}
 
 	#sixth-section {
-		padding: 10px;
+		padding-top: 10px;
 	}
 
 	#howto {
@@ -456,5 +373,9 @@ html, body {
 	#contributors {
 		width: 300px;
 		height:400px;
+	}
+
+	#cp-big {
+		min-width: auto;
 	}
 }

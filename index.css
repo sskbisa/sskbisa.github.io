@@ -33,7 +33,7 @@ body {
 
 .donate-button:hover {
 	text-decoration: none;
-	color: #383838;
+	color: white;
 }
 
 
@@ -81,7 +81,7 @@ body {
 	border-style: solid;
 	border: none;
 	min-height: 500px;
-	padding: 2em 30px 0 2em;
+	padding: 5em 30px 0 2em;
 }
 
 .odd-section {
@@ -108,7 +108,7 @@ body {
 	font-family: 'Coco-Gothic';
 	font-weight: bold;
 	font-size: 35pt;
-	color: #393939;
+	color: #505D68;
 }
 
 .section-desc {
@@ -149,6 +149,11 @@ body {
 #first-section-more a {
 	color: white;
 	font-style: italic;
+}
+
+#fourth-section-more a {
+	color: #383838;
+	font-style: italic
 }
 
 .donate-button {
@@ -277,8 +282,7 @@ body {
 	width: 40%;
 }
 #fifth-section-donate-wrapper {
-	padding:1em 3em;
-	margin: 20px;
+	padding: 1em 0;
 }
 #fifth-section-img {
 	width: 80%;
@@ -303,11 +307,28 @@ body {
 }
 
 #contributors {
-	max-width: 800px;
-	height: 500px;
-	background-color: grey;
+	max-width: 1200px;
 	margin: auto;
+	margin-top: 3em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
+
+.contributor {
+	font-family: 'Coco-Gothic';
+	font-weight: bold;
+	margin: 8px 10px;
+	padding: 0;
+	font-size: 12pt;
+	color: #67A2A2;
+}
+
+.num {
+	font-family: Arial;
+	font-weight: bold;
+}
+
 
 /** FOOTER */
 #before-footer {
@@ -483,10 +504,18 @@ body {
 		padding: 5px 20px;
 	}
 
+	#fifth-section-donate-wrapper {
+		padding-left: 30px;
+	}
+
 	.navbar-nav {
 		background-color: rgb(109, 174, 176);
 	    border-radius: 0 0 15px 15px;
 	    padding-bottom: 10px;
+	}
+
+	#fourth-section-more a {
+		padding-left: 30px;
 	}
 
 /*
@@ -523,9 +552,11 @@ body {
 	}
 
 	#contributors {
-		width: 300px;
-		height:400px;
+		margin-top: 1em;
+		max-height: 500px;
+		overflow: scroll;
 	}
+
 }
 @media only screen and (max-width: 446px) {
 	#first-section {
