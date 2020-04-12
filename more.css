@@ -173,6 +173,7 @@ html, body {
 
 #cp-big {
 	min-width: 500px;
+	color: white;
 	width: auto;
 	margin: auto;
 	padding: 30px;
